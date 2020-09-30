@@ -1,0 +1,75 @@
+<html>
+<head> 
+    <title> Login And Registration - by Yogesh Machhirke</title>
+    <link rel="stylesheet"href="style.css">
+    </head>
+<body>
+    <div class="hero">
+       <div class="form-box">
+        <div class="botton-box">
+            <div id="btn"></div>
+           <button type="button"class="toggle-btn"onclick="login()">Log In</button>
+              <button type="button"class="toggle-btn"onclick="register()">Register</button>
+           </div>
+           <div class="social-icons">
+            <img scr="fb1.jfif">
+            <img scr="google.png">   
+            <img scr="twitter.jpg">   
+            
+        </div> 
+           
+           <form id="login"class="input-group">
+           <input type="text" class="input-field" placeholder="User Id"required>
+            <input type="text" class="input-field" placeholder="Password"required>   
+               <input type="checkbox"class="check-box"><span> Remember Password</span>
+               <button type="submit"class="submit-btn"> Log In</button>
+           </form>
+           
+            <form id="register"class="input-group">
+           <input type="text" class="input-field" placeholder="User Id"required>
+            <input type="Email" class="input-field" placeholder="Email Id"required>   
+            <input type="text" class="input-field" placeholder="Enter Password"required> 
+                
+               <input type="checkbox"class="check-box"><span> I agree to terms & Conditions</span>
+               <button type="submit"class="submit-btn"> Register</button>
+           </form>
+        </div>
+         
+    </div>
+    <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");    
+        
+        
+    function register(){
+        x.style.left="-400px";
+        y.style.left="50px";
+        z.style.left="110px";
+        
+    }
+         function login(){
+        x.style.left="50px";
+        y.style.left="450px";
+        z.style.left="0px"; }
+    </script>
+    
+        <!----------------footer-------------------------------------->  
+    
+    <section id="footer">
+    <div class="container text-right">
+        
+        <p> &copy; Copyright 2020 Mixindia Solutions. All Rights Reserved. Made with  <i class="fa fa-heart-o"> </i>  By Yogesh Machhirke</p>
+        </div>
+    </section>
+ 
+     <!---------------footer end-------------------------------------->   
+    
+    <script src="smooth-scroll.js"></script>
+</body>    
+</html>
+
+
+
+    
+    
